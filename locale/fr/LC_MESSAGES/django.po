@@ -1,0 +1,135 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-10-23 09:25+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#: volunteermanage/settings.py:116
+msgid "French"
+msgstr "Français"
+
+#: volunteermanage/settings.py:117
+msgid "English"
+msgstr "Anglais"
+
+#: volunteers/admin.py:21
+msgid "Generate volunteering requests"
+msgstr "Générer les invitations"
+
+#: volunteers/constants.py:8
+msgid "Player"
+msgstr "Joueur"
+
+#: volunteers/constants.py:9
+msgid "Admin"
+msgstr ""
+
+#: volunteers/constants.py:19
+msgid "Sent"
+msgstr "Envoyée"
+
+#: volunteers/constants.py:20
+msgid "Accepted"
+msgstr "Acceptée"
+
+#: volunteers/constants.py:21
+msgid "Rejected"
+msgstr "Rejetée"
+
+#: volunteers/constants.py:22
+msgid "Cancelled"
+msgstr "Annulée"
+
+#: volunteers/migrations/0002_auto_20201015_1206.py:34
+#: volunteers/migrations/0002_auto_20201015_1206.py:40
+msgid "Chronométreur table de marque"
+msgstr ""
+
+#: volunteers/migrations/0002_auto_20201015_1206.py:35
+#: volunteers/migrations/0002_auto_20201015_1206.py:41
+msgid "Secrétaire table de marque"
+msgstr ""
+
+#: volunteers/migrations/0002_auto_20201015_1206.py:36
+#: volunteers/migrations/0002_auto_20201015_1206.py:42
+msgid "Responsable de salle"
+msgstr ""
+
+#: volunteers/migrations/0002_auto_20201015_1206.py:37
+#: volunteers/migrations/0002_auto_20201015_1206.py:43
+msgid "Bénévole au bar"
+msgstr ""
+
+#: volunteers/migrations/0002_auto_20201015_1206.py:38
+msgid "Arbitrage d’un match sénior"
+msgstr ""
+
+#: volunteers/migrations/0002_auto_20201015_1206.py:44
+msgid "Arbitrage d’un match jeune"
+msgstr ""
+
+#: volunteers/models.py:126
+msgid "senior"
+msgstr "sénior"
+
+#: volunteers/models.py:126
+msgid "young"
+msgstr "jeune"
+
+#: volunteers/templates/base.html:42
+msgid "Volunteer Management"
+msgstr "Gestion des bénévoles"
+
+#: volunteers/templates/base.html:44
+msgid "Summary"
+msgstr "Résumé"
+
+#: volunteers/templates/base.html:45
+msgid "Matchs"
+msgstr "Matches"
+
+#: volunteers/templates/base.html:46
+msgid "Volunteers"
+msgstr "Bénévoles"
+
+#: volunteers/templates/login.html:5
+msgid "Login"
+msgstr ""
+
+#: volunteers/templates/login.html:11
+msgid "Your username and password didn't match. Please try again."
+msgstr "Votre nom d'utilisateur et votre mot de passe ne correspondent pas. Veuillez réessayer."
+
+#: volunteers/templates/login.html:19
+msgid "Please login to see this page."
+msgstr "Veuillez vous connecter pour voir cette page."
+
+#: volunteers/templates/login.html:28
+msgid "Email Address"
+msgstr "Adresse Email"
+
+#: volunteers/templates/login.html:33
+msgid "Password"
+msgstr "Mot de passe"
+
+#: volunteers/templates/login.html:36
+msgid "Submit"
+msgstr "Envoyer"
+
+#: volunteers/templates/summary.html:5 volunteers/templates/summary.html:11
+msgid "Upcoming matchs"
+msgstr "Matchs à venir"

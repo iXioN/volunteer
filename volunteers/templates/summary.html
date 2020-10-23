@@ -1,0 +1,73 @@
+{% extends "base.html" %}
+{% load i18n %}
+
+{% block title %}
+    {% translate "Upcoming matchs" %}
+{% endblock %}
+
+{% block content %}
+
+    <div class="container">
+        <h1>{% translate "Upcoming matchs" %}</h1>
+
+        {% for match in matchs %}
+            <h3 class="text-center">{{match.starting_datetime|date:"l d M y"}} {{match.starting_datetime|time:"H:i"}} </h3>
+            {{match.section}}<h5>{{match.get_name}}</h5> <p>{% translate "convocation time: " %} {{match.get_convocation_datetime|time}}
+
+
+<!--            <div class="container bg-table">
+                <div class="row">
+                    {% for role_name in match.get_role_reuqests_names %}
+                    <div class="col-sm bg-table">
+                        {{role_name}}
+                    </div>
+                    {% endfor %}
+
+                </div>
+            </div>
+            <div class="row">
+                    {% for role in match.get_role_reuqests %}
+                    <div class="col-sm bg-table">
+                        {{role.volunteer.first_name}} {{role.volunteer.last_name}}
+                    </div>
+                {% endfor %}
+            </div>
+            <div class="row">
+                    {% for role in match.get_role_reuqests %}
+                    <div class="col-sm">
+                        {{role.get_status_display}}
+                    </div>
+                {% endfor %}
+            </div>-->
+            {% if match.matchvolunteeringrequest_set.count %}
+                <table class="table table-dark">
+                    <thead>
+                    <tr>
+                        {% for role_name in match.get_role_reqests_names %}
+                        <th scope="col">{{role_name}}</th>
+                        {% endfor %}
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        {% for role in match.get_role_reuqests %}
+                            <td>{{role.volunteer.first_name}} {{role.volunteer.last_name}}</td>
+                        {% endfor %}
+                    </tr>
+                    <tr>
+                        {% for role in match.get_role_reuqests %}
+                        <td>{{role.get_status_display}}</td>
+                        {% endfor %}
+                    </tr>
+                    </tbody>
+                </table>
+            {% else %}
+                <h2>{% translate "Request haven't been generated" %}</h2>
+            {% endif %}
+
+        {% empty %}
+            <h2>{% translate "No match have been set" %}</h2>
+        {% endfor %}
+
+    </div>
+{% endblock %}
