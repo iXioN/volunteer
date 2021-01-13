@@ -12,7 +12,7 @@
 
         {% for match in matchs %}
             <h3 class="text-center">{{match.starting_datetime|date:"l d M y"}} {{match.starting_datetime|time:"H:i"}} </h3>
-            {{match.section}}<h5>{{match.get_name}}</h5> <p>{% translate "convocation time: " %} {{match.get_convocation_datetime|time}}
+        {{match.section}}<h5>{{match.get_name}}</h5> <p>{% translate "convocation time: " %} {{match.get_convocation_datetime|time}}h</p>
 
 
 <!--            <div class="container bg-table">

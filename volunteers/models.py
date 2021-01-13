@@ -1,4 +1,5 @@
 import random
+import random
 from django.db import models
 from django.apps import apps
 from django.utils.translation import gettext as _
@@ -78,10 +79,10 @@ class Match(models.Model):
         return "{}/THAC".format(self.competitor)
 
     def get_role_reqests_names(self):
-        return self.matchvolunteeringrequest_set.all().order_by('role').values_list("role__name", flat=True)
+        return self.matchvolunteeringrequest_set.all().order_by('id').values_list("role__name", flat=True)
 
     def get_role_reuqests(self):
-        return self.matchvolunteeringrequest_set.all().order_by('role')
+        return self.matchvolunteeringrequest_set.all().order_by('id')
 
     def get_convocation_datetime(self):
         return self.starting_datetime - timedelta(hours=1)
